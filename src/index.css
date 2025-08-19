@@ -62,6 +62,7 @@ html, body {
   --warning: hsl(52 23% 34%);
   --success: hsl(147 19% 36%);
   --info: hsl(217 22% 41%);
+  --shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.2), 0px 4px 4px hsla(0, 0%, 0%, 0.1);
 }
 
 .dark-mode {
@@ -79,4 +80,5 @@ html, body {
   --warning: hsl(52 19% 57%);
   --success: hsl(146 17% 59%);
   --info: hsl(217 28% 65%);
+  --shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.2), 0px 4px 4px hsla(0, 0%, 0%, 0.1);
 }/*# sourceMappingURL=index.css.map */
