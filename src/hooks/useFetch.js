@@ -8,7 +8,7 @@ export default function useFetch(url) {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZjA4Mjc3YTFlYzM2YWU5Njg0Mjc4NzZmMTExNjcwZiIsIm5iZiI6MTc1NTYxMjU1My41NzIsInN1YiI6IjY4YTQ4NTg5Mzc2Zjc4YTgxNWNhNzkwMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.fasDZYDmmuUgmdQQAK-zOkOnOV8wEeOc6uGz3CJ_xco'
+          Authorization: process.env.REACT_APP_API_KEY
         }
       };
     
