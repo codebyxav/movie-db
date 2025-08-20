@@ -17,11 +17,26 @@ header {
 .hf_container > div {
   min-width: 150px;
   height: 90%;
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+.hf_container > div:nth-of-type(2) {
+  justify-content: center;
+}
+.hf_container > div:last-of-type {
+  justify-content: flex-end;
 }
 
 .site {
   display: flex;
   align-items: center;
+}
+.site a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .site span {
   display: block;
@@ -59,12 +74,18 @@ header {
   display: flex;
   align-items: center;
   list-style: none;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
 }
 .navigation nav ul li {
   margin: 0 20px 0 20px;
   letter-spacing: 2px;
   color: var(--text-muted);
+}
+.navigation nav ul li a {
+  text-decoration: none;
+}
+.navigation nav ul li a:visited {
+  color: inherit;
 }
 
 .search {

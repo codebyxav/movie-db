@@ -1,4 +1,5 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -20,7 +21,7 @@ export default function Header() {
 
 
             <div className='site'>
-
+                <Link to="/"></Link>
                 <span>
                     <svg width="800px" height="800px" viewBox="0 0 55.231 55.231" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group_27" data-name="Group 27" transform="translate(-361.081 -1142.626)">
@@ -44,10 +45,10 @@ export default function Header() {
             <div className='navigation'>
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Popular</li>
-                        <li>Top Rated</li>
-                        <li>Upcoming</li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="title/popular">Popular</Link></li>
+                        <li><Link to="title/top">Top Rated</Link></li>
+                        <li><Link to="title/upcoming">Upcoming</Link></li>
                     </ul>
                 </nav>
             </div>

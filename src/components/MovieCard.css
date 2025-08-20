@@ -1,7 +1,8 @@
 .card {
   width: 30%;
+  min-width: 322px;
   height: 800px;
-  background-color: var(--border-muted);
+  background-color: var(--bg);
   position: relative;
   border-radius: 8px;
   border: var(--border) 1px solid;
@@ -24,7 +25,7 @@
   color: var(--text);
 }
 .info p {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 25px;
   margin-bottom: 25px;
   color: var(--text-muted);

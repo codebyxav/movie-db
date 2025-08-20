@@ -1,5 +1,14 @@
+import './page-styles/IndMovie.css';
+
 export function IndMovie() {
   return (
-    <div>IndMovie</div>
+    <main>
+      <div className="detail_container">
+
+        
+
+
+      </div>
+    </main>
   )
 }
