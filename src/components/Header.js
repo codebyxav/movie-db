@@ -1,15 +1,23 @@
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+
 
 export default function Header() {
 
     const body = document.querySelector('body');
+    const navigate = useNavigate();
 
     function colorMode() {
         body.classList.toggle('dark-mode');
     }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        const q_value = event.target.search.value;
+        event.target.reset();
 
+        return navigate(`/search?q=${q_value}`);
+    }
 
 
   return (
@@ -45,10 +53,10 @@ export default function Header() {
             <div className='navigation'>
                 <nav>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="title/popular">Popular</Link></li>
-                        <li><Link to="title/top">Top Rated</Link></li>
-                        <li><Link to="title/upcoming">Upcoming</Link></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="title/popular">Popular</NavLink></li>
+                        <li><NavLink to="title/top">Top Rated</NavLink></li>
+                        <li><NavLink to="title/upcoming">Upcoming</NavLink></li>
                     </ul>
                 </nav>
             </div>
@@ -73,7 +81,7 @@ export default function Header() {
                         </svg>
                     </span>
 
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <input type="text" name="search" id="search" placeholder='Search...'/>
                     </form>
                 </div>

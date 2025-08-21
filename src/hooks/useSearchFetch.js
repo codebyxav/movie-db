@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useFetch(url) {
+export default function useFetch(url, query="") {
 
     const [data, setData] = useState([]);
     
@@ -15,7 +15,7 @@ export default function useFetch(url) {
     
       useEffect(() => {
         async function fetchMovies(param) {
-          const response = await fetch(`https://api.themoviedb.org/3/${url}?language=en-US&page=1`, param);
+          const response = await fetch(`https://api.themoviedb.org/3/${url}?query=${query}`, param);
           const raw = await response.json();
           setData(raw.results);
         }

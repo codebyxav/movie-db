@@ -1,10 +1,11 @@
 import './MovieCard.css';
-import pic from '../assets/marin.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import d_poster from '../assets/poster.jpg';
 
 export default function MovieCard({ title, poster, id, overview }) {
 
     const imgBase = 'https://image.tmdb.org/t/p/w500/';
+    const navigate = useNavigate();
     
     function trimmer(str) {
       let newStr = '';
@@ -17,11 +18,14 @@ export default function MovieCard({ title, poster, id, overview }) {
       }
     }
 
-  return (
-    <div className='card'>
-      <Link to={`title/${id}`} ></Link>
+    function toPage() {
+        navigate(`/title/${id}`);
+    }
 
-        <img src={`${imgBase}/${poster}`} alt="" />
+  return (
+    <div className='card' onClick={toPage}>
+
+        <img src={poster === null ? d_poster : `${imgBase}/${poster}`} alt="" />
 
         <div className='info'>
             <h2>{title}</h2>

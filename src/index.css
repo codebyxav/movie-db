@@ -38,8 +38,7 @@
 }
 
 html, body {
-  height: max(1px, auto);
-  min-height: 100vw;
+  min-height: 100vh;
   font-family: "Roboto";
 }
 

@@ -1,6 +1,56 @@
 .detail_container {
   width: 75%;
-  height: max(1px, auto);
-  min-height: 80vw;
-  background-color: olive;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+.detail_container > div:first-of-type {
+  width: 35%;
+  height: 100%;
+}
+.detail_container > div:first-of-type div {
+  width: 100%;
+  position: relative;
+}
+.detail_container > div:first-of-type div img {
+  width: 100%;
+  border-radius: 5px;
+}
+.detail_container > div:last-of-type {
+  width: 60%;
+  height: 100%;
+}
+.detail_container > div:last-of-type h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: var(--text);
+}
+.detail_container > div:last-of-type p {
+  font-size: 1.1rem;
+  line-height: 30px;
+  color: var(--text);
+  margin: 15px 0 15px 0;
+}
+.detail_container .genres {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin: 35px 0 35px 0;
+}
+.detail_container .genres span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  height: 100%;
+  border: var(--text) 1px solid;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 0 15px 0 15px;
+}
+.detail_container .genres span p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text);
 }/*# sourceMappingURL=IndMovie.css.map */

@@ -1,0 +1,38 @@
+.not_found {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not_found h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: var(--text);
+}
+.not_found div {
+  width: 50%;
+  position: relative;
+  margin: 25px 0 25px 0;
+}
+.not_found div img {
+  width: 100%;
+}
+.not_found button {
+  width: 200px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text);
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: var(--text) 2px solid;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+.not_found button:hover {
+  background-color: var(--text);
+  color: var(--bg-light);
+}/*# sourceMappingURL=NotFound.css.map */

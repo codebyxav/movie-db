@@ -79,13 +79,14 @@ header {
 .navigation nav ul li {
   margin: 0 20px 0 20px;
   letter-spacing: 2px;
-  color: var(--text-muted);
 }
 .navigation nav ul li a {
   text-decoration: none;
+  color: var(--text-muted);
+  transition: all 0.1s linear;
 }
-.navigation nav ul li a:visited {
-  color: inherit;
+.navigation nav ul li a.active {
+  color: var(--text);
 }
 
 .search {

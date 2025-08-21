@@ -4,7 +4,7 @@ import './page-styles/MovieList.css';
 
 export function MovieList({ pagePath }) {
 
-  const { data } = useFetch(`https://api.themoviedb.org/3/${pagePath}?language=en-US&page=1`);
+  const { data } = useFetch(pagePath);
 
   return (
     <main>
